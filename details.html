@@ -4,34 +4,360 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Details</title>
+    <title>Home</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="icon" type="image/png" href="./favicon.png">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
-    <nav class="navbar fixed-top   bg-secondary text-white p-4">
+<body class="body body-lg">
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark p-3">
+
+            <a class="navbar-brand navbar-expand-sm bg-light-subtle object-fit-none border rounded " href="index.html">
+                <img src="amazing_brand.png" class="logo" alt="logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto ">
+                    <li class="nav-item fs-5 border me-2 border-danger-subtle rounded-4">
+                        <a class="nav-link active " aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item fs-5 me-2 border border-danger-subtle rounded-4">
+                        <a class="nav-link active" aria-current="page" href="upcomingevents.html">Upcoming Events</a>
+                    </li>
+                    <li class="nav-item fs-5 me-2 border border-danger-subtle rounded-4">
+                        <a class="nav-link active" aria-current="page" href="PastEvents.html">Past Events</a>
+                    </li>
+                    <li class="nav-item fs-5 me-2 border border-danger-subtle rounded-4">
+                        <a class="nav-link active" aria-current="page" href="Contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item fs-5 border border-danger-subtle rounded-4">
+                        <a class="nav-link active" aria-current="page" href="Stats.html">Stats</a>
+                    </li>
+                </ul>
+            </div>
+
+        </nav>
 
 
-        <a class="navbar-brand bg-light-subtle object-fit-none border rounded " href="index.html">
-            <img src="./amazing_brand.png" alt="logo" width="160" height="40">
-        </a>
+        <div id="carouselExampleCaptions" class="carousel slide bg-secondary h-25 ">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner  ">
+                <div class="carousel-item active">
+                    <img class="imagencarusel1 w-100" src="optional_banner_5.jpg" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h2 class="TituloHome   ">STATS</h2>
+                    </div>
+                </div>
+                <div class="carousel-item  ">
+                    <img class="imagencarusel1  w-100" src="optional_banner_2.jpg" alt="...">
+                    <div class="carousel-caption d-flex justify-content-between ">
+                        <h2 class="TituloHome   ">STATS</h2>
 
+                    </div>
+                </div>
+                <div class="carousel-item   ">
+                    <img class="imagencarusel1 w-100" src="optional_banner_1.jpg" alt=" ...">
+                    <div class="carousel-caption w-75  ms-5 d-flex justify-content-end">
+                        <h1 class=" ms-5 fs-2 ">STATS</h1>
+                    </div>
+                </div>
 
-
-
-        <div class="navbar-nav navbar-expand-md align-items-center position-absolute end-0 px-2 text-center fs-5">
-            <a class="nav-link text-bg-secondary p-3 me-2 border rounded" href="index.html">HOME</a>
-            <a class="nav-link text-bg-secondary p-1 me-2 border rounded" href="upcomingevents.html">UPCOMING<br>EVENTS</a>
-            <a class="nav-link text-bg-secondary p-1 me-2 border rounded" href="PastEvents.html">PAST<br>EVENTS</a>
-            <a class="nav-link text-bg-secondary p-3 me-2 border rounded" href="Contact.html">CONTACT</a>
-            <a class="nav-link text-bg-secondary p-3  border rounded" href="Stats.html">STATS</a>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
         </div>
 
+        <div class=" bg-dark w-100 p-3 d-flex align-items-center justify-content-between ">
+            <div class="checkbox text-white">
+                <input class="form-check-input  p-1 ms-4" type="checkbox" aria-label="checkbox">
+                <label class="form-label ms-2">Category</label>
+                <input class="form-check-input  p-2 ms-5" type="checkbox" aria-label="checkbox">
+                <label class="form-label ms-2">Category</label>
+                <input class="form-check-input  p-2 ms-5" type="checkbox" aria-label="checkbox">
+                <label class="form-label ms-2">Category</label>
+                <input class="form-check-input  p-2 ms-5 " type="checkbox" aria-label="checkbox">
+                <label class="form-label ms-2">Category</label>
 
-    </nav>
 
+            </div>
+
+            <div class="input-group w-25 ">
+                <input type="search" class="form-control rounded" placeholder="Search">
+                <button type="button" class="btn btn-outline-light bg-dark">search</button>
+            </div>
+
+        </div>
+    </header>
+
+    <main>
+        <div id="carouselExample" class="carousel slide">
+            <div class="carousel-inner bg-secondary ">
+                <div class="carousel-item active p-3  ">
+                    <div class="cards-wrapper d-flex ">
+                        <div id="miLibro" class="cards-wrapper bg-dark w-50 me-2     ">
+                            <img src="books.jpg" class="img-fluid w-75 d-flex justify-content-center" alt="books">
+                            <div class=" card-body w-75 p-3 text-white">
+                                <h5 class="card-title text-center">School Book Fair</h5>
+                                <ol>
+                                    <li><b>Descripcion</b> Bring your unused school book and bring the one you need.
+                                    </li>
+                                    <li><b>Category</b> Book Exchange</li>
+                                    <li><b>Place</b> Room D1</li>
+                                    <li><b>Capacity</b> 150000</li>
+                                    <li><b>Assistance</b> 123286</li>
+                                    <li><b> price</b> 1</li>
+                                </ol>
+
+                                <div class="card-text d-flex justify-content-between p-1 text-white ">
+                                    <p>
+                                        2022-10-15
+                                    </p>
+                                    <p>
+                                        ID_1
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="miMuseo" class="card bg-dark w-50    ">
+
+                            <img src="outing_to_the_museum.jpg" class="img-fluid w-50" alt="books">
+                            <div class=" card-body w-50 text-white">
+                                <h5 class="card-title text-center">Art Exhibition</h5>
+                                <ol>
+                                    <li><b>Descripcion</b> Let's go to the art museum for an incredible tour to learn
+                                        about
+                                        the largest dinosaurs.</li>
+                                    <li><b>Category</b> Museum</li>
+                                    <li><b>Place</b> Field</li>
+                                    <li><b>Capacity</b> 82000</li>
+                                    <li><b>Assistance</b> 65892</li>
+                                    <li><b> price</b> 15</li>
+                                </ol>
+
+                                <div class="card-text d-flex justify-content-between p-1 text-white ">
+                                    <p>
+                                        2022-11-02
+                                    </p>
+                                    <p>
+                                        ID_2
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="miHallowen" class="card bg-dark w-50    ">
+
+                            <img src="costume_party.jpg" class="img-fluid w-50" alt="books">
+                            <div class=" card-body w-50 text-white">
+                                <h5 class="card-title text-center">Halloween Night</h5>
+                                <ol>
+                                    <li><b>Descripcion</b>Come in your scariest costume character to win amazing prizes.
+                                    </li>
+                                    <li><b>Category</b> Costume Party</li>
+                                    <li><b>Place</b> Room C</li>
+                                    <li><b>Capacity</b> 12000</li>
+                                    <li><b>Assistance</b> 9000</li>
+                                    <li><b> price</b> 12</li>
+                                </ol>
+
+                                <div class="card-text d-flex justify-content-between p-1 text-white ">
+                                    <p>
+                                        2024-02-12
+                                    </p>
+                                    <p>
+                                        ID_3
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="miConcert" class="card bg-dark w-50    ">
+
+                            <img src="music_concert.jpg" class="img-fluid w-50" alt="books">
+                            <div class=" card-body w-50 text-white">
+                                <h5 class="card-title text-center">Metallica in concert</h5>
+                                <ol>
+                                    <li><b>Descripcion</b>The only concert of the most emblematic band in the world.
+                                    </li>
+                                    <li><b>Category</b> Music Concer</li>
+                                    <li><b>Place</b> Room a</li>
+                                    <li><b>Capacity</b> 138000</li>
+                                    <li><b>Assistance</b> 138000</li>
+                                    <li><b> price</b> 150</li>
+                                </ol>
+
+                                <div class="card-text d-flex justify-content-between p-1 text-white ">
+                                    <p>
+                                        2024-01-22
+                                    </p>
+                                    <p>
+                                        ID_4
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item ms-1 p-3 ">
+
+                    <div class="cards-wrapper d-flex h-75">
+
+                        <div id="miMarathon" class="card bg-dark w-50    ">
+
+                            <img src="marathon.jpg" class="img-fluid w-50" alt="books">
+                            <div class=" card-body w-50 text-white">
+                                <h5 class="card-title text-center">10K for life</h5>
+                                <ol>
+                                    <li><b>Descripcion</b>Come and exercise, improve your health and lifestyle.</li>
+                                    <li><b>Category</b> Race</li>
+                                    <li><b>Place</b> Soccer Field</li>
+                                    <li><b>Capacity</b> 30000</li>
+                                    <li><b>Assistance</b> 25698</li>
+                                    <li><b> price</b> 3</li>
+                                </ol>
+
+                                <div class="card-text d-flex justify-content-between p-1 text-white ">
+                                    <p>
+                                        2022-03-01
+                                    </p>
+                                    <p>
+                                        ID_5
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="miFood" class="card bg-dark w-50    ">
+
+                            <img src="food_fair.jpg" class="img-fluid w-50" alt="books">
+                            <div class=" card-body w-50 text-white">
+                                <h5 class="card-title text-center">Festival of the collectivities</h5>
+                                <ol>
+                                    <li><b>Descripcion</b>Enjoy your favorite dishes from different countries in a
+                                        unique
+                                        event for the whole family.</li>
+                                    <li><b>Category</b> Food Fair</li>
+                                    <li><b>Place</b> Room A</li>
+                                    <li><b>Capacity</b> 45000</li>
+                                    <li><b>Assistance</b> 42756</li>
+                                    <li><b> price</b> 5</li>
+                                </ol>
+
+                                <div class="card-text d-flex justify-content-between p-1 text-white ">
+                                    <p>
+                                        2022-12-12
+                                    </p>
+                                    <p>
+                                        ID_6
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="miCinema" class="card bg-dark     ">
+
+                            <img src="cinema.jpg" class="img-fluid w-50" alt="books">
+                            <div class=" card-body w-50 text-white">
+                                <h5 class="card-title text-center">Avengers</h5>
+                                <ol>
+                                    <li><b>Descripcion</b>Marvel's Avengers 3d premiere the start of an epic saga with
+                                        your
+                                        best superheroes</li>
+                                    <li><b>Category</b> Let's go to the cinema</li>
+                                    <li><b>Place</b> Room D1</li>
+                                    <li><b>Capacity</b> 9000</li>
+                                    <li><b>Assistance</b> 9000</li>
+                                    <li><b> price</b> 250</li>
+                                </ol>
+
+                                <div class="card-text d-flex justify-content-between p-1 text-white ">
+                                    <p>
+                                        2023-10-15
+                                    </p>
+                                    <p>
+                                        ID_7
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="miMusic" class="card bg-dark w-50    ">
+
+                            <img src="optional_banner_5.jpg" class="img-fluid w-50" alt="books">
+                            <div class=" card-body w-50 text-white">
+                                <h5 class="card-title text-center">concert</h5>
+                                <ol>
+                                    <li><b>Descripcion</b>The only concert of the most emblematic band in the world
+                                        Previous
+                                    </li>
+                                    <li><b>Category</b> Let's go to the concert</li>
+                                    <li><b>Place</b> Room H1</li>
+                                    <li><b>Capacity</b> 30000</li>
+                                    <li><b>Assistance</b> 30000</li>
+                                    <li><b> price</b> 100</li>
+                                </ol>
+
+                                <div class="card-text d-flex justify-content-between p-1 text-white ">
+                                    <p>
+                                        2024-10-12
+                                    </p>
+                                    <p>
+                                        ID_7
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev " type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </main>
+    <footer class="redesSociales  align-items-center bg-dark p-3 d-flex justify-content-between  ">
+
+        <div class="d-flex">
+            <a class="navbar-brand" href="https://www.facebook.com/">
+                <img src="facebook.png" alt="facebook" class="w-75 ">
+            </a>
+            <a class="navbar-brand" href="https://www.instagram.com/">
+                <img src="instagram.png" alt="instagram" class="w-75">
+            </a>
+            <a class="navbar-brand" href="https://web.whatsapp.com/">
+                <img src="whatsapp.png" alt="whatsapp" class="w-75">
+            </a>
+        </div>
+
+        <div class="cohort text-white   me-2  ">
+            <h3>Felipe Piña</h3>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
